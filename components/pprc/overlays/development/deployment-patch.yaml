@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: pprc
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: POC
+          value: POC
+        image: quay.io/redhat-appstudio-qe/byoc-mmgs-tenant/byoc-app-zbyn/pprc@sha256:2093cd00f41166cee9af2db0efc00797831dbf9e719cb678ea8ca67550bc1a9a
+        name: my-java-quarkus
+        resources: {}
+status: {}
